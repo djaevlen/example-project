@@ -1,0 +1,5 @@
+packages:
+    - name: api
+      actions:
+          - name: simlink
+            runtime: nodejs:default

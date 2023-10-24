@@ -1,0 +1,13 @@
+spec:
+    alerts:
+        - rule: DEPLOYMENT_FAILED
+        - rule: DOMAIN_FAILED
+    functions:
+        - git:
+              branch: main
+              repo_clone_url: https://github.com/digitalocean/sample-functions-nodejs-qrcode
+          name: simlink
+          routes:
+              - path: /api
+          source_dir: /
+    name: qrcode-app
